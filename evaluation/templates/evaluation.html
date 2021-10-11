@@ -12,26 +12,46 @@
     <link rel="stylesheet" href="/static/css/style.css" />
   </head>
   <body style="background-color: rgba(0, 0, 0, 0.2)">
-    <header>
-      <div class="navbar navbar-primary"></div>
-      <div class="navbar navbar-secondary">
-        <img src="/static/images/Logo.png" />
+    <div class="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="page-caption">
+              <h1 class="page-title">PyForm</h1>
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
-    <div class="container">
-      <div style="padding-top: 25px; padding-bottom: 25px">
-        <h1 class="page-title">Avalie nosso treinamento</h1>
-      </div>
-      <form method="post" class="form">
-        {% csrf_token %} {{ form.as_p }}
-
-        <button type="submit" class="button">Enviar</button>
-      </form>
     </div>
-    <footer>
-      <div class="footer-container">
-        <span>Copyright © 2021 Anderson Guedes | PyForm</span>
+
+    <div class="card-section">
+      <div class="container">
+        <div class="card-block bg-white mb30">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="section-title mb-0">
+                <h3 class="card-title">Avalie nosso treinamento</h3>
+                <form method="post" class="form">
+                  {% csrf_token %} {{ form.as_p }}
+
+                  <button type="submit" class="button">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="
+              col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12
+              text-center
+              mt-3
+            "
+          >
+            2021 Anderson Guedes | PyForm
+          </div>
+        </div>
       </div>
-    </footer>
+    </div>
   </body>
 </html>

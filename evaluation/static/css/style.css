@@ -1,88 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
+.form-control:focus {
+  border-color: #ffc680 !important;
+  box-shadow: 0 0 0 0.25rem rgb(255 198 128 / 35%);
+}
+
+::selection {
+  background: #ffc680;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff7700;
+}
+
+::-webkit-input-placeholder {
+  color: #8d8f90 !important;
+  font-size: 14px !important;
+}
+
+::-moz-placeholder {
+  color: #8d8f90 !important;
+  font-size: 14px !important;
+}
+
+:-ms-input-placeholder {
+  color: #8d8f90 !important;
+  font-size: 14px !important;
+}
+
+:-moz-placeholder {
+  color: #8d8f90 !important;
+  font-size: 14px !important;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0rem;
+}
+
 body {
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "Overpass", sans-serif;
+  letter-spacing: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  background-color: #edefef;
 }
 
-.navbar {
-  min-height: 50px;
-  width: 100%;
+.page-header {
+  background: rgb(228, 141, 34);
+  background: linear-gradient(
+    90deg,
+    rgba(228, 141, 34, 1) 36%,
+    rgba(179, 98, 0, 1) 71%
+  );
 }
 
-.navbar-secondary {
-  background-color: #fff;
-  height: 110px;
-  justify-content: center;
-}
-
-.navbar-primary {
-  background-color: #190e5f;
+.page-caption {
+  padding-top: 80px;
+  padding-bottom: 115px;
 }
 
 .page-title {
-  color: #190e5f;
-  text-transform: uppercase;
-  margin-bottom: 0px !important;
+  font-family: "Handlee", cursive;
+  font-size: 50px;
+  line-height: 1;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -1px;
 }
 
-label {
-  padding-bottom: 3px;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: space-around;
-  background-color: #190e5f;
-  min-height: 50px;
-  color: #eee;
+.card-section {
   position: relative;
-  font-weight: 100;
-  font-family: Helvetica, serif;
+  bottom: 60px;
 }
 
-.form {
-  border-radius: 3px;
-  padding: 10px 15px;
+.card-block {
+  padding: 60px 80px;
 }
 
-.input {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 7px 10px;
-  border-radius: 2px;
-  color: #000;
-  /* background-color: #484b69; */
-  border: none;
-}
-
-.textarea {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 7px 10px;
-  border-radius: 2px;
-  color: #000;
-  /* background-color: #484b69; */
-  border: none;
-}
-
-.label {
-  width: 100%;
-  display: block;
+.section-title {
+  margin-bottom: 60px;
 }
 
 .button {
   width: 100%;
   margin: 25px 0;
-  background-color: #190e5f;
+  background-color: #ff7700;
   border: none;
-  color: #fff;
+  color: #ffffff;
   border-radius: 2px;
   padding: 7px 10px;
   font-size: 1em;
   cursor: pointer;
   text-transform: uppercase;
+  font-family: "Handlee", cursive;
+  font-weight: 700;
+}
+
+.card-title {
+  font-family: "Handlee", cursive;
+  color: #ff7700;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 40px;
+  font-weight: 600;
+}
+
+label {
+  padding-bottom: 2px;
 }
